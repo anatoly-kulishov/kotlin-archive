@@ -3,7 +3,6 @@ import JetBrainsAcademy.TypesAndDataStructures.cuttingTheFraction
 import JetBrainsAcademy.TypesAndDataStructures.integersInAction
 import JetBrainsAcademy.TypesAndDataStructures.swap
 import Others.*
-import kotlin.reflect.typeOf
 
 fun main(args: Array<String>) {
     dataTypes()
