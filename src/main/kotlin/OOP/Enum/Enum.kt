@@ -1,13 +1,10 @@
 package OOP.EnumExample
 
 import OOP.Enum.Animals
-import OOP.Student.Student
+import OOP.Inheritance.Student
 
 class EnumExample {
    init {
-       val sergey = Student("Sergey", "Kulishov", 5);
-       sergey.printAllInfo();
-
        val animal = Animals.BEAR;
        when(animal) {
            Animals.CAT -> println(Animals.CAT.toLowerCase());

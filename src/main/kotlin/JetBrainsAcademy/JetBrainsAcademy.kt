@@ -2,14 +2,66 @@ package JetBrainsAcademy
 
 class JetBrainsAcademy {
     init {
-        cinemaRoomManager()
+        val obj = Cinema(7, 8)
+        obj.getUserInput()
+        obj.setUpBoard()
     }
 }
 
-fun cinemaRoomManager() {
-    println("Cinema:")
-    println("  1 2 3 4 5 6 7 8")
-    for (i in 1..7) {
-        println("$i S S S S S S S S")
+class Cinema(var rows:Int, var seats:Int) {
+    var list2 = MutableList(rows) { MutableList(seats) { 'S' } }
+
+    fun getUserInput(){
+        println("Enter the number of rows:")
+        val rows = readln().toInt()
+
+        println("Enter the number of seats in each row:")
+        val seats = readln().toInt()
+
+        var value = 0
+
+        if (rows * seats <= 60)
+            value = (rows * seats  * 10)
+        else{
+            if (rows % 2 == 0){
+                value = (rows * seats / 2 * 10) + (rows * seats / 2 * 8)
+            } else {
+                value = ((rows - 1) * seats / 2 * 10) + ((rows - 1) * seats / 2 * 8) + (seats * 8)
+            }
+        }
+
+        println("Total income:")
+        println("$$value")
+    }
+
+    fun setUpBoard(){
+        drawGameBoard()
+    }
+
+    fun drawGameBoard() {
+        print("Cinema:")
+        println()
+        print(" ")
+        print(" ")
+        for (i in 1..seats){
+            if (i > 9) {
+                var a = i.toString().substring(1,2)
+                print(a)
+            } else {
+                print("$i ")
+            }
+        }
+        println()
+
+        var cnt = 1
+        for (i in list2) {
+            print("${cnt}")
+            cnt++
+
+            for (j in i){
+                print(" $j")
+            }
+            println("")
+        }
     }
 }

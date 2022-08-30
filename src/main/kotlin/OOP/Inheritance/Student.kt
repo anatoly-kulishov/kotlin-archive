@@ -1,6 +1,4 @@
-package OOP.Student
-
-import OOP.Person.Person
+package OOP.Inheritance
 
 class Student(firstname: String, lastname: String, var course: Int) : Person(firstname, lastname) {
     override fun printAllInfo() {

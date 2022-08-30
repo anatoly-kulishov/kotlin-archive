@@ -1,4 +1,4 @@
-package OOP.Person
+package OOP.Inheritance
 
 open class Person(var firstname: String, var lastname: String) {
     open fun printAllInfo() {
