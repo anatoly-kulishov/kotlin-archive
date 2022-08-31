@@ -1,4 +1,4 @@
-package JetBrainsAcademy.TypesAndDataStructures
+package IF_Expression
 
 import java.lang.Math.abs
 

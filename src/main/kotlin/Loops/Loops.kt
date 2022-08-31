@@ -1,11 +1,14 @@
 package Loops
 
+import Loops.iterators.iterators
+
 class Loops {
     init {
-        whileLoop();
-        doWhileLoop();
-        forLoop(1, 10, 2);
-        forLoopStr();
+        whileLoop()
+        doWhileLoop()
+        forLoop(1, 10, 2)
+        forLoopStr()
+        iterators()
     }
 }
 
@@ -27,13 +30,13 @@ fun doWhileLoop() {
 }
 
 fun forLoop(startPoint: Int, endPointInt: Int, step: Int) {
-    for(i in startPoint..endPointInt step step) {
+    for (i in startPoint..endPointInt step step) {
         print("$i ")
     }
 }
 
 fun forLoopStr() {
-    for(i in 'a'..'d') {
+    for (i in 'a'..'d') {
         print("$i ")
     }
 }
