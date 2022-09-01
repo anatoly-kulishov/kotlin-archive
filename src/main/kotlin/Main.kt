@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
     IF_Expression()
     DataTypes()
     Loops()
-    OOP()
+
     ControlFlow()
+    OOP()
 }

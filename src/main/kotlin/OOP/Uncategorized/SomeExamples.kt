@@ -5,11 +5,9 @@ import OOP.Db.printInfo
 import OOP.Singleton.Singleton
 import OOP.filterList.filterList
 
-
 fun SomeExamples() {
      val ex1 = Singleton()
      val ex2 = Singleton()
-     val ex3 = Singleton()
 
      val db = Db.MongoDb(1, "mongo")
      val db2 = Db.PostgresSQL(2, "postgres", true)
