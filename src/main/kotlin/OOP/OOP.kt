@@ -16,7 +16,7 @@ class OOP {
         Generic()
         Inheritance()
 
-        // SpecialClasses
+        /** SpecialClasses **/
         DataClass()
         EnumClass()
         SealedClass()
