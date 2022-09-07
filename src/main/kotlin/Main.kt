@@ -1,5 +1,4 @@
 import CinemaRoomManager.CinemaRoomManager
-import ScopeFunctions.ScopeFunctions
 import IF_Expression.IF_Expression
 import Collections.Collections
 import ControlFlow.ControlFlow
@@ -18,6 +17,5 @@ fun main(args: Array<String>) {
     Functional()
     OOP()
     Collections()
-    ScopeFunctions()
 }
 
